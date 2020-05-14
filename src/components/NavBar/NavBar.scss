@@ -1,0 +1,70 @@
+@import '../../style.scss';
+
+.navbar {
+  background: $mainBlack;
+  padding: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: auto 100px;
+  grid-template-rows: 93px auto;
+  height: 93px;
+  width: 100vw;
+  transition: all 0.2s ease-in-out;
+  i {
+    grid-column: 2 /3;
+    margin: auto;
+    height: 30px;
+  }
+  @media screen and(min-width:600px) {
+    i {
+      display: none !important;
+    }
+
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+.open {
+  height: 40vh;
+  @media screen and(min-width:600px) {
+    height: 93px !important;
+  }
+}
+
+.nav__links {
+  align-self: center;
+  align-items: center;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  height: 100%;
+  grid-column: 1/ -1;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  @media screen and(min-width:600px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: auto;
+    opacity: 1 !important;
+  }
+
+  .visible {
+    display: none;
+  }
+}
+.visible {
+  opacity: 1;
+}
+.nav__link {
+  color: $mainGray;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s linear;
+  margin-bottom: 3rem;
+  @media screen and(min-width:600px) {
+  }
+  &:hover {
+    color: $mainGreen;
+  }
+}

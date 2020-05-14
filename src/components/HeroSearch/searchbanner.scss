@@ -1,0 +1,10 @@
+@import '../../style.scss';
+
+.search__banner {
+  position: absolute;
+
+  top: 20%;
+  z-index: 1;
+  width: 80%;
+  margin: auto;
+}

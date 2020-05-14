@@ -1,0 +1,51 @@
+@import '../../style.scss';
+
+.tourList {
+  width: 70vw;
+  margin: 2rem auto;
+  padding: 2rem 0;
+}
+h2 {
+  text-align: center;
+  padding: 1rem;
+  margin: 3rem auto 0;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .tourList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.5rem;
+  }
+}
+@media screen and (min-width: 968px) {
+  .tourList {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 85vw;
+  }
+}
+@media screen and (min-width: 1208px) {
+  .tourList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.flexible {
+  width: 100vw;
+  background: $mainGray;
+  height: 15rem;
+  text-align: center;
+  padding: 1rem;
+
+  h2 {
+  }
+  p {
+    max-width: 500px;
+    margin: auto;
+    font-size: 1.1rem;
+    color: $mainBlack;
+    width: 100%;
+    padding: 0.3rem;
+  }
+}
