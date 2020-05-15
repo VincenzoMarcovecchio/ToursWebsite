@@ -23,6 +23,7 @@ const Slider = (props) => {
     translate: getWidth(),
     transition: 0.95,
     _slides: [lastSlide, firstSlide, secondSlide],
+    images: [],
   });
 
   const { activeSlide, translate, _slides, transition } = state;

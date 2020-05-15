@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './NavBar.scss';
 import logo from '../../logo.png';
+import { Link } from 'react-router-dom';
 export default function NavBar() {
   const [state, setState] = useState({
     open: false,
@@ -30,9 +31,9 @@ export default function NavBar() {
           </a>
         </li>
         <li>
-          <a href='/' className='nav__link active'>
-            tours
-          </a>
+          <Link to='/login' className='nav__link '>
+            Login
+          </Link>
         </li>
       </ul>
     </nav>

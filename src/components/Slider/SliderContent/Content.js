@@ -1,9 +1,8 @@
-
 /** @jsx jsx */
-import React from 'react'
-import { css, jsx } from '@emotion/core'
+import React from 'react';
+import { css, jsx } from '@emotion/core';
 
-const SliderContent = props => (
+const SliderContent = (props) => (
   <div
     css={css`
       transform: translateX(-${props.translate}px);
@@ -15,6 +14,6 @@ const SliderContent = props => (
   >
     {props.children}
   </div>
-)
+);
 
-export default SliderContent
+export default SliderContent;
